@@ -1,0 +1,173 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+  font-family: 'Crimson Text', serif;}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+body > .container {
+  padding: 60px 15px 0;
+  color: #474740;
+}
+
+.container {
+  max-width: 960px;
+}
+
+.container .text-muted {
+  margin: 20px 0;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.panel-body {
+  -webkit-columns: 384px 1;
+   -moz-columns: 384px 1;
+        columns: 384px 1;
+}
+
+@media (min-width: 480px) {
+  .panel-body {
+    -webkit-columns: 384px 2;
+     -moz-columns: 384px 2;
+          columns: 384px 2;
+  }
+}
+
+.navbar {
+      font-family: sans-serif;
+}
+
+.navbar-default {
+  background-color: #e24421;
+  border: none;
+  box-shadow: 0 3px 4px rgba(0,0,0,0.2);
+}
+
+.navbar-default .navbar-brand, .navbar-default .navbar-brand:hover {
+  color: #fff;
+
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #fff;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: #fff;
+}
+
+.navbar-default .navbar-nav > li:hover {
+  background: #ff5b38;
+}
+
+.profile-radial{
+  max-width:100%;
+  border: 1px solid #ddd;
+}
+
+.profile_picture{
+  text-align: right;
+}
+
+@media (max-width: 770px) {
+  .profile-radial {
+    display: none;
+  }
+}
+
+.dropdown-menu {
+  border: none;
+}
+
+.navbar-toggle {
+  background: #eee;
+}
+
+.footer {
+  border-top: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#content {
+    margin-bottom: 3em;
+}
+
+.index-page-title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.panel-default > .panel-heading {
+    background-color: #ffffff;
+}
+
+.panel {
+    border-radius: 0px;
+}
+
+.panel-body li a, .panel-body li{
+  font-size: 1.12em;
+}
+
+.body li {
+    font-size: 1.4em;
+}
+
+.body li li{
+    font-size: 1em;
+}
+
+h3.panel-title {
+  font-size: 22px;
+}
+
+.alert-summary {
+    color: #555;
+    background-color: #fff;
+    border-color: #ddd;
+    font-size: 20px;
+}
+
+.alert-summary h4{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.alert {
+  border-radius: 0;
+}
+
+p {
+  font-size: 20px;
+}
+
+.body time {
+    font-size: 20px;
+    color: #666;
+}
+
+header {
+    margin-bottom: 2em;
+}

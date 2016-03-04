@@ -1,0 +1,404 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="page-header ">
+  <h1 class="index-page-title">Applied Social Good: Data Science, Political Science, &amp; History</h1>
+</div>
+<div class="alert alert-summary">
+  <div class="row">
+    <div class="col-sm-9">
+      <h4>I am a data scientist and political scientist</h4>
+      <p>After years working on technology projects in humanitarian aid and international development, I cofounded <a href="http://www.popily.com/">Popily</a>, a startup to democratize data science, and co-host a <a href="http://www.partiallyderivative.com/">general audience data science podcast</a>.</p>
+      <p>This site is my repository of {{articles|length}} articles and tutorials on data science, statistics, and computational social science. For more details, see <a href="https://github.com/chrisalbon/peripheral_brain">GitHub</a>. </p>
+    </div>
+    <div class="col-sm-3 profile_picture">
+        <img class="profile-radial" src="{{ SITEURL }}/images/chris-circle.png" alt="Chris Albon">
+    </div>
+  </div>
+</div>
+
+<div class="row" id="Writing">
+  <div class="col-sm-12">
+    <h2>Writing</h2>
+  </div>
+  <div class="col-sm-12">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <ul>
+          {% for article in articles if article.category == 'Writing' %}
+            <li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></li>
+          {% else %}
+            <li>Coming soon.</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row" id="Projects">
+  <div class="col-sm-12">
+    <h2>Projects</h2>
+  </div>
+  <div class="col-sm-12">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Small Projects</h3>
+      </div>
+      <div class="panel-body">
+        <ul>
+          {% for article in articles if article.category == 'Projects' and 'Small Projects' in article.tags %}
+            <li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></li>
+          {% else %}
+            <li>Coming soon.</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr />
+
+<div class="row" id="Python">
+  <div class="col-sm-12">
+    <h2>Python</h2>
+  </div>
+  <div class="col-sm-12">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Basics</h3>
+      </div>
+      <div class="panel-body">
+        <ul>
+          {% for article in articles if article.category == 'Python' and 'Basics' in article.tags %}
+            <li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></li>
+          {% else %}
+            <li>Coming soon.</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-12">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Data Wrangling</h3>
+      </div>
+      <div class="panel-body">
+        <ul>
+          {% for article in articles if article.category == 'Python' and 'Data Wrangling' in article.tags %}
+            <li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></li>
+          {% else %}
+            <li>Coming soon.</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-12">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Data Visualization</h3>
+      </div>
+      <div class="panel-body">
+        <ul>
+          {% for article in articles if article.category == 'Python' and 'Data Visualization' in article.tags %}
+            <li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></li>
+          {% else %}
+            <li>Coming soon.</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-12">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Web Scraping</h3>
+      </div>
+      <div class="panel-body">
+        <ul>
+          {% for article in articles if article.category == 'Python' and 'Web Scraping' in article.tags %}
+            <li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></li>
+          {% else %}
+            <li>Coming soon.</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-12">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Other</h3>
+      </div>
+      <div class="panel-body">
+        <ul>
+          {% for article in articles if article.category == 'Python' and 'Other' in article.tags %}
+            <li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></li>
+          {% else %}
+            <li>Coming soon.</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row" id="R_Stats">
+  <div class="col-sm-12">
+    <h2>R Stats</h2>
+  </div>
+  <div class="col-sm-12">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Basics</h3>
+      </div>
+      <div class="panel-body">
+        <ul>
+          {% for article in articles if article.category == 'R Stats' and 'Basics' in article.tags %}
+            <li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></li>
+          {% else %}
+            <li>Coming soon.</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-12">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Data Wrangling</h3>
+      </div>
+      <div class="panel-body">
+        <ul>
+          {% for article in articles if article.category == 'R Stats' and 'Data Wrangling' in article.tags %}
+            <li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></li>
+          {% else %}
+            <li>Coming soon.</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-12">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Data Visualization</h3>
+      </div>
+      <div class="panel-body">
+        <ul>
+          {% for article in articles if article.category == 'R Stats' and 'Data Visualization' in article.tags %}
+            <li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></li>
+          {% else %}
+            <li>Coming soon.</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-12">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Other</h3>
+      </div>
+      <div class="panel-body">
+        <ul>
+          {% for article in articles if article.category == 'R Stats' and 'Other' in article.tags %}
+            <li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></li>
+          {% else %}
+            <li>Coming soon.</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row" id="Regex">
+  <div class="col-sm-12">
+    <h2 >Regex</h2>
+  </div>
+  <div class="col-sm-12">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <ul>
+          {% for article in articles if article.category == 'Regex' %}
+            <li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></li>
+          {% else %}
+            <li>Coming soon.</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row" id="Bash">
+  <div class="col-sm-12">
+    <h2 >Command Line</h2>
+  </div>
+  <div class="col-sm-12">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        {% for article in articles if article.category == 'Command Line' %}
+          <li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></li>
+        {% else %}
+          <li>Coming soon.</li>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row" id="Project_Juypter">
+  <div class="col-sm-12">
+    <h2 >Project Jupyter</h2>
+  </div>
+  <div class="col-sm-12">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <ul>
+          {% for article in articles if article.category == 'Jupyter' %}
+            <li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></li>
+          {% else %}
+            <li>Coming soon.</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row" id="SQL">
+  <div class="col-sm-12">
+    <h2 >SQL</h2>
+  </div>
+  <div class="col-sm-12">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <ul>
+          {% for article in articles if article.category == 'SQL' %}
+            <li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></li>
+          {% else %}
+            <li>Coming soon.</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row" id="Mathematics">
+  <div class="col-sm-12">
+    <h2 >Mathematics</h2>
+  </div>
+  <div class="col-sm-12">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <ul>
+          {% for article in articles if article.category == 'Mathematics' %}
+            <li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></li>
+          {% else %}
+            <li>Coming soon.</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row" id="Probability">
+  <div class="col-sm-12">
+    <h2 >Probability</h2>
+  </div>
+  <div class="col-sm-12">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <ul>
+          {% for article in articles if article.category == 'Probability' %}
+            <li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></li>
+          {% else %}
+            <li>Coming soon.</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row" id="Frequentist_Statistics">
+  <div class="col-sm-12">
+    <h2 >Frequentists Statistics</h2>
+  </div>
+  <div class="col-sm-12">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <ul>
+          {% for article in articles if article.category == 'Statistics' %}
+            <li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></li>
+          {% else %}
+            <li>Coming soon.</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row" id="Bayesian_Statistics">
+  <div class="col-sm-12">
+    <h2 >Bayesian Statistics</h2>
+  </div>
+  <div class="col-sm-12">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <ul>
+          {% for article in articles if article.category == 'Bayesian' %}
+            <li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></li>
+          {% else %}
+            <li>Coming soon.</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row" id="Machine_Learning">
+  <div class="col-sm-12">
+    <h2>Machine Learning</h2>
+  </div>
+  <div class="col-sm-12">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        {% for article in articles if article.category == 'Machine Learning' %}
+          <li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></li>
+        {% else %}
+          <li>Coming soon.</li>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row" id="GitHub">
+  <div class="col-sm-12">
+    <h2 >GitHub</h2>
+  </div>
+  <div class="col-sm-12">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <ul>
+          {% for article in articles if article.category == 'GitHub'  %}
+            <li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></li>
+          {% else %}
+            <li>Coming soon.</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}
